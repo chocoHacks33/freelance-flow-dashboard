@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A focused invoice dashboard for independent freelancers." />
+    <title>Freelance Flow</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to dashboard</a>
+    <header class="site-header">
+      <div>
+        <p class="eyebrow">Independent work, clearly tracked</p>
+        <h1>Freelance Flow</h1>
+      </div>
+      <p class="header-note">A lightweight view of invoices and cash flow.</p>
+    </header>
+
+    <main id="main-content" class="dashboard" tabindex="-1">
+      <section class="summary-grid" aria-label="Invoice summary">
+        <article class="metric-card">
+          <p>Paid this month</p>
+          <strong id="paid-total">$0</strong>
+          <span>Cleared invoices</span>
+        </article>
+        <article class="metric-card">
+          <p>Outstanding</p>
+          <strong id="outstanding-total">$0</strong>
+          <span>Expected revenue</span>
+        </article>
+        <article class="metric-card metric-card--alert">
+          <p>Overdue</p>
+          <strong id="overdue-total">$0</strong>
+          <span id="overdue-count">0 invoices</span>
+        </article>
+      </section>
+
+      <div id="dashboard-tools" class="dashboard-tools"></div>
+
+      <section class="panel invoice-panel" aria-labelledby="invoice-heading">
+        <div class="panel-heading">
+          <div>
+            <p class="eyebrow">Current pipeline</p>
+            <h2 id="invoice-heading">Invoices</h2>
+          </div>
+          <p id="invoice-count" aria-live="polite"></p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Invoice</th>
+                <th scope="col">Client</th>
+                <th scope="col">Due</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody id="invoice-rows"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <div id="dashboard-widgets" class="widget-grid"></div>
+    </main>
+
+    <footer>
+      <p>Data stays in this browser. Built for a fast weekly money check-in.</p>
+    </footer>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
+

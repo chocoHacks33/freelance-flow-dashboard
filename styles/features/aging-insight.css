@@ -1,0 +1,65 @@
+.aging-panel {
+  grid-column: span 2;
+}
+
+.aging-buckets {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.15rem 1.5rem;
+}
+
+.aging-bucket {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.aging-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.84rem;
+}
+
+.aging-label span,
+.aging-bucket small {
+  color: #61716c;
+}
+
+.aging-track {
+  height: 0.65rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e7eae6;
+}
+
+.aging-track span {
+  display: block;
+  height: 100%;
+  min-width: 0.15rem;
+  border-radius: inherit;
+  background: #4d8174;
+}
+
+.aging-bucket--week .aging-track span {
+  background: #d5a347;
+}
+
+.aging-bucket--month .aging-track span,
+.aging-bucket--older .aging-track span {
+  background: #d5713f;
+}
+
+.aging-bucket small {
+  font-size: 0.72rem;
+}
+
+@media (max-width: 760px) {
+  .aging-panel {
+    grid-column: auto;
+  }
+
+  .aging-buckets {
+    grid-template-columns: 1fr;
+  }
+}
+

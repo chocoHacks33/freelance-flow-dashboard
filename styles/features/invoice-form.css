@@ -1,0 +1,72 @@
+.invoice-form-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.invoice-form-panel h2 {
+  font-size: 1.2rem;
+}
+
+.invoice-form {
+  display: grid;
+  grid-template-columns: 0.8fr 1.5fr 1fr 0.8fr auto;
+  align-items: end;
+  gap: 0.75rem;
+}
+
+.invoice-form label {
+  display: grid;
+  gap: 0.35rem;
+  color: #52645e;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.invoice-form input {
+  min-width: 0;
+  width: 100%;
+  padding: 0.7rem 0.75rem;
+  border: 1px solid #cdd5cd;
+  border-radius: 0.55rem;
+  color: #172321;
+  background: white;
+}
+
+.invoice-form button {
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.55rem;
+  color: white;
+  background: #243d37;
+  cursor: pointer;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.form-status {
+  min-height: 1.25rem;
+  margin-bottom: 0;
+  color: #52645e;
+  font-size: 0.85rem;
+}
+
+.form-status--success {
+  color: #2b6356;
+}
+
+.form-status--error {
+  color: #a14731;
+}
+
+@media (max-width: 900px) {
+  .invoice-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .invoice-form {
+    grid-template-columns: 1fr;
+  }
+}
+

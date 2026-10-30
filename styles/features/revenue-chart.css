@@ -1,0 +1,56 @@
+.revenue-panel {
+  grid-column: span 2;
+}
+
+.revenue-chart {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(2.75rem, 1fr));
+  align-items: end;
+  gap: clamp(0.4rem, 2vw, 1rem);
+  min-height: 16rem;
+  padding-top: 2.5rem;
+  border-bottom: 1px solid #dbe0d7;
+}
+
+.revenue-column {
+  display: grid;
+  grid-template-rows: 1.5rem 10rem 1.75rem;
+  align-items: end;
+  gap: 0.4rem;
+  height: 100%;
+  text-align: center;
+}
+
+.revenue-value {
+  overflow: hidden;
+  color: #52645e;
+  font-size: 0.72rem;
+  font-variant-numeric: tabular-nums;
+  text-overflow: ellipsis;
+}
+
+.revenue-bar {
+  display: block;
+  width: min(100%, 3.75rem);
+  min-height: 0.2rem;
+  margin-inline: auto;
+  border-radius: 0.55rem 0.55rem 0 0;
+  background: linear-gradient(180deg, #d5713f, #e7a168);
+}
+
+.revenue-label {
+  color: #52645e;
+  font-size: 0.75rem;
+  font-weight: 750;
+}
+
+@media (max-width: 760px) {
+  .revenue-panel {
+    grid-column: auto;
+  }
+
+  .revenue-chart {
+    overflow-x: auto;
+  }
+}
+

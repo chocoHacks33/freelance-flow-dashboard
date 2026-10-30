@@ -1,0 +1,42 @@
+.invoice-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.invoice-filter h2 {
+  font-size: 1.2rem;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.filter-options button {
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #cdd5cd;
+  border-radius: 999px;
+  color: #31413c;
+  background: #f8faf7;
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: 750;
+  text-transform: capitalize;
+}
+
+.filter-options button[aria-pressed="true"] {
+  border-color: #243d37;
+  color: white;
+  background: #243d37;
+}
+
+@media (max-width: 620px) {
+  .invoice-filter {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
+

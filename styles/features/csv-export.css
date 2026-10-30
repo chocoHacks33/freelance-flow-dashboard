@@ -1,0 +1,33 @@
+.export-panel {
+  display: grid;
+  align-content: space-between;
+  gap: 1rem;
+}
+
+.export-panel h2 {
+  margin-bottom: 0.55rem;
+  font-size: 1.2rem;
+}
+
+.export-panel p:not(.eyebrow) {
+  color: #61716c;
+  line-height: 1.55;
+}
+
+.export-panel button {
+  justify-self: start;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.55rem;
+  color: white;
+  background: #243d37;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.export-status {
+  min-height: 1.25rem;
+  margin-bottom: 0;
+  font-size: 0.82rem;
+}
+

@@ -4,6 +4,7 @@ import { initializeRevenueChart } from "./features/revenue-chart.js";
 import { initializeInvoiceForm } from "./features/invoice-form.js";
 import { initializeCsvExport } from "./features/csv-export.js";
 import { initializeAgingInsight } from "./features/aging-insight.js";
+import { initializeInvoiceSorting } from "./features/invoice-sorting.js";
 
 let invoices = [...seedInvoices];
 
@@ -80,4 +81,5 @@ initializeRevenueChart(dashboard);
 initializeInvoiceForm(dashboard);
 initializeCsvExport(dashboard);
 initializeAgingInsight(dashboard);
+initializeInvoiceSorting(dashboard);
 

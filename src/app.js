@@ -4,6 +4,7 @@ import { initializeRevenueChart } from "./features/revenue-chart.js";
 import { initializeInvoiceForm } from "./features/invoice-form.js";
 import { initializeCsvExport } from "./features/csv-export.js";
 import { initializeAgingInsight } from "./features/aging-insight.js";
+import { buildInvoiceDisplayCells, initializeMobileInvoiceTable } from "./features/mobile-invoice-table.js";
 
 let invoices = [...seedInvoices];
 
@@ -33,14 +34,16 @@ function createInvoiceRow(invoice) {
   row.dataset.status = status;
   row.dataset.invoiceId = invoice.id;
 
-  const values = [invoice.id, invoice.client, formatDate(invoice.dueAt), formatCurrency(invoice.amount)];
-  values.forEach((value) => {
+  const cells = buildInvoiceDisplayCells(invoice, formatDate, formatCurrency);
+  cells.forEach(({ label, value }) => {
     const cell = document.createElement("td");
+    cell.dataset.label = label;
     cell.textContent = value;
     row.append(cell);
   });
 
   const statusCell = document.createElement("td");
+  statusCell.dataset.label = "Status";
   const statusPill = document.createElement("span");
   statusPill.className = `status-pill status-pill--${status}`;
   statusPill.textContent = status;
@@ -80,4 +83,5 @@ initializeRevenueChart(dashboard);
 initializeInvoiceForm(dashboard);
 initializeCsvExport(dashboard);
 initializeAgingInsight(dashboard);
+initializeMobileInvoiceTable();
 

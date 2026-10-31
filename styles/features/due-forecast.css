@@ -1,0 +1,31 @@
+.due-forecast {
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(250, 235, 218, 0.9));
+}
+
+.due-forecast h2 {
+  font-size: 1.2rem;
+}
+
+.due-forecast-total {
+  margin-top: 0.45rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.due-forecast-count,
+.due-forecast-next {
+  margin-bottom: 0;
+  color: #52645e;
+  line-height: 1.5;
+}
+
+.due-forecast-next {
+  padding-top: 0.8rem;
+  border-top: 1px solid #e2d6c9;
+  font-size: 0.85rem;
+  font-weight: 700;
+}

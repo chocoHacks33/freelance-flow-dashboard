@@ -1,0 +1,54 @@
+.client-concentration {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.client-concentration h2 {
+  font-size: 1.2rem;
+}
+
+.client-concentration-summary {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.35rem;
+  color: #52645e;
+}
+
+.client-concentration-summary strong {
+  color: #172321;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.client-concentration-summary span {
+  overflow: hidden;
+  font-weight: 800;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.client-concentration-track {
+  height: 0.75rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e7eae6;
+}
+
+.client-concentration-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #4d8174, #d5713f);
+}
+
+.client-concentration-note {
+  margin-bottom: 0;
+  color: #61716c;
+  font-size: 0.85rem;
+  line-height: 1.55;
+}

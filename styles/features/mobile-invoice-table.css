@@ -1,0 +1,66 @@
+@media (max-width: 620px) {
+  .invoice-panel {
+    padding: 1rem;
+  }
+
+  .invoice-panel .table-wrap {
+    overflow: visible;
+  }
+
+  .invoice-panel table,
+  .invoice-panel tbody,
+  .invoice-panel tr,
+  .invoice-panel td {
+    display: block;
+    width: 100%;
+  }
+
+  .invoice-panel thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .invoice-panel tbody {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .invoice-panel tbody tr {
+    padding: 0.45rem 0.8rem;
+    border: 1px solid #dbe0d7;
+    border-radius: 0.85rem;
+    background: #fbfcfa;
+  }
+
+  .invoice-panel tbody td {
+    display: grid;
+    grid-template-columns: minmax(5.5rem, 0.7fr) minmax(0, 1fr);
+    gap: 0.75rem;
+    padding: 0.65rem 0;
+    border-bottom: 1px solid #e5e9e2;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+
+  .invoice-panel tbody td:last-child {
+    border-bottom: 0;
+  }
+
+  .invoice-panel tbody td::before {
+    content: attr(data-label);
+    color: #61716c;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .invoice-panel .status-pill {
+    justify-self: start;
+  }
+}

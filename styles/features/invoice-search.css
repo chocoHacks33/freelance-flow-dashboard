@@ -1,0 +1,49 @@
+.invoice-search {
+  display: grid;
+  grid-template-columns: minmax(12rem, 0.8fr) minmax(16rem, 1.2fr);
+  align-items: end;
+  gap: 0.75rem 1.25rem;
+}
+
+.invoice-search h2 {
+  font-size: 1.2rem;
+}
+
+.invoice-search label {
+  display: grid;
+  gap: 0.35rem;
+  color: #52645e;
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.invoice-search input {
+  width: 100%;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #cdd5cd;
+  border-radius: 0.6rem;
+  color: #172321;
+  background: white;
+}
+
+.invoice-search-status {
+  grid-column: 2;
+  min-height: 1.25rem;
+  margin-bottom: 0;
+  color: #61716c;
+  font-size: 0.82rem;
+}
+
+#invoice-rows tr[data-search-hidden="true"] {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .invoice-search {
+    grid-template-columns: 1fr;
+  }
+
+  .invoice-search-status {
+    grid-column: 1;
+  }
+}

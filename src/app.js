@@ -4,6 +4,7 @@ import { initializeRevenueChart } from "./features/revenue-chart.js";
 import { initializeInvoiceForm } from "./features/invoice-form.js";
 import { initializeCsvExport } from "./features/csv-export.js";
 import { initializeAgingInsight } from "./features/aging-insight.js";
+import { initializeThemePreference } from "./features/theme-preference.js";
 
 let invoices = [...seedInvoices];
 
@@ -74,6 +75,7 @@ const dashboard = {
   }
 };
 
+initializeThemePreference();
 renderDashboard();
 initializeStatusFilter(dashboard);
 initializeRevenueChart(dashboard);

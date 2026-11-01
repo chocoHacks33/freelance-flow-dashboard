@@ -1,0 +1,91 @@
+.theme-toggle {
+  flex: 0 0 auto;
+  align-self: center;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #aebbb5;
+  border-radius: 999px;
+  color: #243d37;
+  background: rgba(255, 255, 255, 0.72);
+  font-size: 0.82rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  color: #edf4f1;
+  background: #101916;
+}
+
+:root[data-theme="dark"] body {
+  background:
+    radial-gradient(circle at top right, rgba(213, 113, 63, 0.15), transparent 28rem),
+    #101916;
+}
+
+:root[data-theme="dark"] .header-note,
+:root[data-theme="dark"] .eyebrow,
+:root[data-theme="dark"] footer,
+:root[data-theme="dark"] .metric-card p,
+:root[data-theme="dark"] .metric-card span,
+:root[data-theme="dark"] .panel-heading p:last-child,
+:root[data-theme="dark"] th {
+  color: #aebdb7;
+}
+
+:root[data-theme="dark"] .metric-card,
+:root[data-theme="dark"] .panel {
+  border-color: #34453f;
+  background: rgba(28, 41, 37, 0.94);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.2);
+}
+
+:root[data-theme="dark"] .metric-card--alert {
+  border-color: #526d64;
+  background: #29483f;
+}
+
+:root[data-theme="dark"] .metric-card--alert p,
+:root[data-theme="dark"] .metric-card--alert span {
+  color: #d1e0da;
+}
+
+:root[data-theme="dark"] th,
+:root[data-theme="dark"] td {
+  border-bottom-color: #35463f;
+}
+
+:root[data-theme="dark"] .status-pill {
+  color: #bce8d8;
+  background: #21463b;
+}
+
+:root[data-theme="dark"] .status-pill--overdue {
+  color: #ffd0c1;
+  background: #633526;
+}
+
+:root[data-theme="dark"] .status-pill--paid {
+  color: #d2dbd7;
+  background: #3a4843;
+}
+
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] textarea {
+  border-color: #52645e;
+  color: #edf4f1;
+  background: #17231f;
+}
+
+:root[data-theme="dark"] .theme-toggle {
+  border-color: #60726b;
+  color: #edf4f1;
+  background: #24332e;
+}
+
+@media (max-width: 760px) {
+  .theme-toggle {
+    margin-top: 1rem;
+  }
+}

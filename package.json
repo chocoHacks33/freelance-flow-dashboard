@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "node --test",
-    "check": "node --check src/app.js && node --check src/data.js && node --check src/features/status-filter.js && node --check src/features/revenue-chart.js && node --check src/features/invoice-form.js && node --check src/features/csv-export.js && node --check src/features/aging-insight.js"
+    "check": "node --check src/app.js && node --check src/data.js && node --check src/features/status-filter.js && node --check src/features/revenue-chart.js && node --check src/features/invoice-form.js && node --check src/features/csv-export.js && node --check src/features/aging-insight.js && node --check src/features/print-report.js"
   }
 }
 

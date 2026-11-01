@@ -1,0 +1,45 @@
+.payment-timing {
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(224, 241, 233, 0.82));
+}
+
+.payment-timing h2 {
+  font-size: 1.2rem;
+}
+
+.payment-timing-average {
+  margin-top: 0.45rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.payment-timing-context,
+.payment-timing-rate {
+  margin-bottom: 0;
+  color: #52645e;
+  line-height: 1.5;
+}
+
+.payment-timing-track {
+  height: 0.65rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #dfe5df;
+}
+
+.payment-timing-track span {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: #2b6356;
+  transition: width 180ms ease;
+}
+
+.payment-timing-rate {
+  font-size: 0.85rem;
+  font-weight: 700;
+}

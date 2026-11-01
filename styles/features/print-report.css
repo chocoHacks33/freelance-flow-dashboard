@@ -1,0 +1,148 @@
+.print-report-heading {
+  display: none;
+}
+
+.dashboard-tools:has(.print-report-button) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.print-report-button {
+  padding: 0.7rem 0.95rem;
+  border: 1px solid #aebbb5;
+  border-radius: 0.65rem;
+  color: #243d37;
+  background: rgba(255, 255, 255, 0.88);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@page {
+  size: auto;
+  margin: 14mm;
+}
+
+@media print {
+  :root {
+    color-scheme: light;
+    color: #111;
+    background: white;
+  }
+
+  body {
+    min-width: 0;
+    background: white;
+  }
+
+  .skip-link,
+  .site-header,
+  .dashboard-tools,
+  footer,
+  button,
+  form {
+    display: none !important;
+  }
+
+  .dashboard {
+    width: 100%;
+    gap: 8mm;
+  }
+
+  .print-report-heading {
+    display: block;
+    padding-bottom: 5mm;
+    border-bottom: 2px solid #243d37;
+  }
+
+  .print-report-heading p {
+    margin-bottom: 1mm;
+    color: #52645e;
+    font-size: 9pt;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .print-report-heading h2 {
+    margin-bottom: 2mm;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22pt;
+  }
+
+  .print-report-heading time {
+    color: #52645e;
+    font-size: 9pt;
+  }
+
+  .summary-grid,
+  .widget-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4mm;
+  }
+
+  .metric-card,
+  .panel {
+    break-inside: avoid;
+    border: 1px solid #c9cec8;
+    color: #111;
+    background: white;
+    box-shadow: none;
+  }
+
+  .metric-card {
+    padding: 5mm;
+  }
+
+  .metric-card p,
+  .metric-card span,
+  .metric-card--alert p,
+  .metric-card--alert span,
+  .panel-heading p:last-child,
+  th {
+    color: #4a5551;
+  }
+
+  .metric-card strong {
+    font-size: 22pt;
+  }
+
+  .invoice-panel {
+    padding: 5mm;
+  }
+
+  .table-wrap {
+    overflow: visible;
+  }
+
+  table {
+    font-size: 9pt;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr {
+    break-inside: avoid;
+  }
+
+  th,
+  td {
+    padding: 3mm 2mm;
+    border-bottom-color: #d8dcd7;
+  }
+
+  .status-pill {
+    border: 1px solid currentColor;
+    color: #245648;
+    background: transparent;
+  }
+
+  .status-pill--overdue {
+    color: #7a3020;
+  }
+
+  .status-pill--paid {
+    color: #4a5551;
+  }
+}

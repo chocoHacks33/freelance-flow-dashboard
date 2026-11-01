@@ -1,0 +1,104 @@
+.overdue-reminder {
+  display: grid;
+  grid-column: span 2;
+  gap: 0.9rem;
+}
+
+.overdue-reminder-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 0.65rem 1rem;
+}
+
+.overdue-reminder h2 {
+  font-size: 1.2rem;
+}
+
+.overdue-reminder-heading label,
+.overdue-reminder-draft-label {
+  color: #52645e;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.overdue-reminder-heading label {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+}
+
+.overdue-reminder select {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: end;
+  min-width: 15rem;
+}
+
+.overdue-reminder select,
+.overdue-reminder textarea {
+  padding: 0.7rem;
+  border: 1px solid #bdc9c3;
+  border-radius: 0.6rem;
+  color: #172321;
+  background: white;
+}
+
+.overdue-reminder textarea {
+  width: 100%;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.overdue-reminder-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.overdue-reminder button {
+  padding: 0.7rem 0.9rem;
+  border: 0;
+  border-radius: 0.6rem;
+  color: white;
+  background: #243d37;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.overdue-reminder button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.overdue-reminder-status {
+  margin-bottom: 0;
+  color: #52645e;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 760px) {
+  .overdue-reminder {
+    grid-column: auto;
+  }
+
+  .overdue-reminder-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .overdue-reminder-heading label,
+  .overdue-reminder select {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .overdue-reminder select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .overdue-reminder-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

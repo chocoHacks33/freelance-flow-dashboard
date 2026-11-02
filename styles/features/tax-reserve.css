@@ -1,0 +1,68 @@
+.tax-reserve {
+  display: grid;
+  align-content: start;
+  gap: 0.85rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(224, 241, 233, 0.8));
+}
+
+.tax-reserve h2 {
+  font-size: 1.2rem;
+}
+
+.tax-reserve-total {
+  margin-top: 0.35rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.tax-reserve-context,
+.tax-reserve-error {
+  margin-bottom: 0;
+  color: #52645e;
+  line-height: 1.5;
+}
+
+.tax-reserve-form {
+  display: grid;
+  gap: 0.45rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #d8e4dd;
+}
+
+.tax-reserve-form label {
+  color: #52645e;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.tax-reserve-form div {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.tax-reserve-form input {
+  min-width: 0;
+  width: 100%;
+  padding: 0.65rem 0.7rem;
+  border: 1px solid #bdc9c3;
+  border-radius: 0.55rem;
+  background: white;
+}
+
+.tax-reserve-form button {
+  padding: 0.65rem 0.8rem;
+  border: 0;
+  border-radius: 0.55rem;
+  color: white;
+  background: #243d37;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.tax-reserve-error {
+  min-height: 1.2em;
+  color: #8a3d2a;
+  font-size: 0.8rem;
+}

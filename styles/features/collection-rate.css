@@ -1,0 +1,45 @@
+.collection-rate {
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(230, 235, 225, 0.85));
+}
+
+.collection-rate h2 {
+  font-size: 1.2rem;
+}
+
+.collection-rate-value {
+  margin-top: 0.4rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.collection-rate-track {
+  height: 0.7rem;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #dfe5df;
+}
+
+.collection-rate-track span {
+  display: block;
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #d5713f, #2b6356);
+  transition: width 180ms ease;
+}
+
+.collection-rate-amount,
+.collection-rate-count {
+  margin-bottom: 0;
+  color: #52645e;
+  line-height: 1.5;
+}
+
+.collection-rate-count {
+  font-size: 0.85rem;
+  font-weight: 700;
+}

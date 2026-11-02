@@ -1,0 +1,59 @@
+.late-fee-estimator {
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(251, 226, 218, 0.76));
+}
+
+.late-fee-estimator h2 {
+  font-size: 1.2rem;
+}
+
+.late-fee-fields {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.55rem 0.75rem;
+}
+
+.late-fee-fields label {
+  color: #52645e;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.late-fee-fields select,
+.late-fee-fields input {
+  min-width: 0;
+  width: 100%;
+  padding: 0.65rem 0.7rem;
+  border: 1px solid #c9bdb7;
+  border-radius: 0.55rem;
+  background: white;
+}
+
+.late-fee-rate-field {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.late-fee-total {
+  margin-top: 0.35rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.late-fee-context,
+.late-fee-note {
+  margin-bottom: 0;
+  color: #52645e;
+  line-height: 1.5;
+}
+
+.late-fee-note {
+  padding-top: 0.65rem;
+  border-top: 1px solid #ead4cc;
+  font-size: 0.78rem;
+}

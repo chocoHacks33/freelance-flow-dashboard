@@ -1,0 +1,50 @@
+.year-to-date-earnings {
+  display: grid;
+  align-content: start;
+  gap: 0.8rem;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.97), rgba(239, 231, 215, 0.82));
+}
+
+.year-to-date-earnings h2 {
+  font-size: 1.2rem;
+}
+
+.year-to-date-total {
+  margin-top: 0.4rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+.year-to-date-count {
+  margin-bottom: 0;
+  color: #52645e;
+  line-height: 1.5;
+}
+
+.year-to-date-earnings dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 0.2rem 0 0;
+  padding-top: 0.8rem;
+  border-top: 1px solid #ded6c8;
+}
+
+.year-to-date-earnings dl div {
+  min-width: 0;
+}
+
+.year-to-date-earnings dt {
+  color: #61716c;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.year-to-date-earnings dd {
+  margin: 0.3rem 0 0;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}

@@ -6,6 +6,10 @@ const MAXIMUM_RATE = 60;
 const STORAGE_KEY = "freelance-flow:tax-reserve-rate";
 
 export function normalizeTaxRate(value) {
+  if (value === null || String(value).trim() === "") {
+    return null;
+  }
+
   const rate = Number(value);
   if (!Number.isFinite(rate) || rate < MINIMUM_RATE || rate > MAXIMUM_RATE) {
     return null;

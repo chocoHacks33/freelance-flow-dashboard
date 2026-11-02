@@ -5,6 +5,7 @@ import { calculateTaxReserve, normalizeTaxRate } from "../src/features/tax-reser
 
 test("normalizes supported reserve percentages", () => {
   assert.equal(normalizeTaxRate("27.46"), 27.5);
+  assert.equal(normalizeTaxRate(""), null);
   assert.equal(normalizeTaxRate(0), 0);
   assert.equal(normalizeTaxRate(60), 60);
   assert.equal(normalizeTaxRate(-1), null);

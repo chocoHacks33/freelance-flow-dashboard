@@ -1,0 +1,42 @@
+.invoice-calendar-tool {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #dbe0d7;
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.invoice-calendar-tool h2 {
+  font-size: 1.15rem;
+}
+
+.invoice-calendar-summary {
+  margin: 0.35rem 0 0;
+  color: #52645e;
+}
+
+.invoice-calendar-tool button {
+  flex: 0 0 auto;
+  padding: 0.7rem 0.95rem;
+  border: 0;
+  border-radius: 0.65rem;
+  color: white;
+  background: #243d37;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.invoice-calendar-tool button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+  .invoice-calendar-tool {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
